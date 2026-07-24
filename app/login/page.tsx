@@ -11,7 +11,7 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false)
   const [errorMsg, setErrorMsg] = useState<string | null>(null)
   
-  const router = Router()
+  const router = useRouter()
   const supabase = createClient()
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -84,9 +84,12 @@ export default function LoginPage() {
           </button>
         </form>
 
-        <p className="text-center text-xs text-slate-500">
-          Belum punya akun? Registrasi langsung di Supabase Dashboard atau aktifkan fitur Sign Up.
-        </p>
+     <p className="text-center text-xs text-slate-400">
+    Belum punya akun?{' '}
+     <Link href="/signup" className="text-indigo-400 hover:underline font-medium">
+        Daftar di sini
+    </Link>
+</p>
       </div>
     </div>
   )
