@@ -5,13 +5,10 @@ import Link from 'next/link'
 import { 
   ArrowUpRight, 
   ShoppingBag, 
-  ChevronLeft, 
-  ChevronRight, 
   Menu, 
   X, 
   ShieldCheck, 
   Truck, 
-  CheckCircle2, 
   Sparkles 
 } from 'lucide-react'
 
@@ -121,16 +118,9 @@ export default function Home() {
         )}
       </header>
 
-      {/* 2. HERO SECTION (EDITORIAL STYLE LAYOUT) */}
+      {/* 2. HERO SECTION */}
       <section className="relative overflow-hidden pt-8 pb-16 lg:pt-12 lg:pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Giant Serif Typography Header (Mirip Fresh Juice Style) */}
-        <div className="text-center mb-6">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[110px] font-serif font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-200 to-white leading-none">
-            Next Generation
-          </h1>
-        </h1>
-
         {/* Main Banner Card */}
         <div className="relative rounded-[32px] bg-gradient-to-br from-slate-900 via-[#131720] to-[#1c2230] border border-slate-800/80 p-6 sm:p-10 lg:p-14 overflow-hidden min-h-[480px] sm:min-h-[520px] flex flex-col justify-between">
           
@@ -161,7 +151,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Floating Hero Product Asset Mockup (Tengah / Kanan) */}
+          {/* Floating Hero Product Asset Mockup */}
           <div className="absolute right-4 bottom-4 sm:right-12 sm:bottom-8 lg:right-24 lg:bottom-10 z-10 pointer-events-none transform rotate-[-6deg] hover:rotate-0 transition duration-500">
             <div className="w-48 h-72 sm:w-64 sm:h-96 bg-gradient-to-tr from-slate-800 to-slate-700 rounded-[40px] border-4 border-slate-600/40 p-4 shadow-2xl flex flex-col justify-between items-center text-center backdrop-blur-xl relative">
               <div className="w-16 h-3 bg-slate-900 rounded-full mb-4"></div>
@@ -174,7 +164,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Category Filter Pills (Sesuai Referensi Bawah Banner) */}
+          {/* Category Filter Pills */}
           <div className="relative z-10 pt-8 flex flex-wrap items-center gap-2 sm:gap-3">
             {categories.map((cat) => (
               <button
@@ -191,7 +181,7 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Floating Badges (Statistik Kanan Bawah) */}
+          {/* Floating Badges */}
           <div className="hidden lg:flex absolute bottom-8 right-8 z-20 items-center gap-3 bg-slate-900/90 border border-slate-800 p-3 rounded-2xl shadow-2xl backdrop-blur-md">
             <div className="flex -space-x-2">
               <div className="w-8 h-8 rounded-full bg-orange-500 text-white text-[10px] font-bold flex items-center justify-center border-2 border-slate-900">100%</div>
@@ -216,7 +206,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. FEATURED / KATALOG SECTION (BENTO GRID STYLE) */}
+      {/* 4. FEATURED / KATALOG SECTION */}
       <section id="katalog" className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-800 pb-6">
           <div>
@@ -276,7 +266,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. ABOUT / CRAFTED FOR MODERN WELLNESS (EDITORIAL SECTION) */}
+      {/* 5. ABOUT / FEATURED BANNER SECTION */}
       <section id="fitur" className="py-16 bg-[#11141b] border-y border-slate-800/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
@@ -324,7 +314,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. BIG FOOTER SECTION (SESUAI GAMBAR ACUAN) */}
+      {/* 6. BIG FOOTER SECTION */}
       <footer className="bg-gradient-to-b from-[#0b0d10] to-[#050608] border-t border-slate-800/80 pt-16 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
@@ -374,7 +364,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Bottom Huge Typography (Mirip Tulisan "VITARA" Raksasa) */}
+          {/* Bottom Huge Typography */}
           <div className="pt-8 border-t border-slate-900 text-center">
             <h1 className="text-6xl sm:text-9xl md:text-[140px] font-serif font-black tracking-widest text-slate-900 select-none">
               iSTORE
